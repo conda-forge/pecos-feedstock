@@ -1,5 +1,5 @@
 {% set name = "pecos" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/sandialabs/pecos/archive/{{ version }}.zip
-  sha256: c9dcd2cc780937b0a1343d31b54d877b48e72907018d5bc96ba7f02455359e88
+  sha256: 7a7e6dbfc6a05a32e9ab0fa4c7e802db611d8fc115a66f6672260567c45117f6
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - numpy >=1.10.4
     - jinja2
     - matplotlib-base
+    - pytest
 
 test:
   imports:
