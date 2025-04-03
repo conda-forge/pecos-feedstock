@@ -1,5 +1,5 @@
 {% set name = "pecos" %}
-{% set version = "1.0.0rc1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/sandialabs/pecos/archive/{{ version }}.zip
-  sha256: 34316f34e135d896a21f847dfe2509fd7f26800b24496767584d133de7946756
+  sha256: cb4efd2117309b4f5a20f7403b551f71dd48ff1885d552c4204a3c9a1daed02d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
